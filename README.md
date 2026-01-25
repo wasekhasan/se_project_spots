@@ -1,21 +1,67 @@
-# Project 3: Spots
+# Spots
 
-### Overview  
+## Project Overview
 
-* Intro  
-* Figma  
-* Images  
-  
-**Intro**
-  
-This project is made so all the elements are displayed correctly on popular screen sizes. We recommend investing more time in completing this project, since it's more difficult than previous ones.  
-  
-**Figma**  
-  
-* [Link to the project on Figma](https://www.figma.com/file/BBNm2bC3lj8QQMHlnqRsga/Sprint-3-Project-%E2%80%94-Spots?type=design&node-id=2%3A60&mode=design&t=afgNFybdorZO6cQo-1)
-  
-**Images**  
-  
-The way you'll do this at work is by exporting images directly from Figma — we recommend doing that to practice more. Don't forget to optimize them [here](https://tinypng.com/), so your project loads faster. 
-  
-Good luck and have fun!
+Spots is an interactive social media web application where users can share photos, like photos from other users, and customize their profiles. This project demonstrates modern web development practices including responsive design, semantic HTML, and modular CSS architecture.
+
+## Technologies Used
+
+- **HTML5**: Semantic markup
+- **CSS3**: BEM methodology with flat file structure
+- **Custom Fonts**: Poppins font family
+- **Version Control**: Git and GitHub
+
+## Project Structure
+
+```
+se_project_spots/
+├── blocks/
+│   └── page.css
+├── images/
+│   └── (project images)
+├── pages/
+│   └── index.css
+├── vendor/
+│   ├── fonts/
+│   │   ├── Poppins-Regular.ttf
+│   │   └── Poppins-Medium.ttf
+│   ├── fonts.css
+│   └── normalize.css
+├── .editorconfig
+├── .gitignore
+├── .prettierignore
+├── favicon.ico
+├── index.html
+└── README.md
+```
+
+## Features
+
+- Clean, modern UI design
+- Responsive layout
+- BEM naming convention
+- Modular CSS architecture
+
+## Setup Instructions
+
+1. Clone the repository:
+   ```bash
+   git clone git@github.com:yourusername/se_project_spots.git
+   ```
+
+2. Open `index.html` in your browser
+
+## Development
+
+This project follows the BEM (Block Element Modifier) methodology for CSS organization. Each block has its own CSS file in the `blocks/` directory.
+
+## Author
+
+**Syed Hasan**
+- GitHub: [@wasekhasan](https://github.com/wasekhasan)
+
+## Acknowledgments
+
+- Project design and requirements provided by TripleTen Bootcamp
+- Fonts: Poppins from Google Fonts
+- Normalize.css by Nicolas Gallagher
