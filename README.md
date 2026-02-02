@@ -1,5 +1,8 @@
 # Spots
 
+# link to project pitch video
+https://www.loom.com/share/90a387538967467aaec631b213894cb1
+
 ## Project Overview
 
 Spots is an interactive social media web application where users can share photos, like photos from other users, and customize their profiles. This project demonstrates modern web development practices including responsive design, semantic HTML, and modular CSS architecture.
