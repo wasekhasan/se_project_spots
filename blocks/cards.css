@@ -1,27 +1,33 @@
 .cards {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 0 20px 40px;
+  padding: 20px 0 40px;
+  border-bottom: 1px solid rgba(33, 33, 33, 0.4);
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(3, 413px);
+  justify-content: center;
+  gap: 40px 20px;
 }
 
-@media (min-width: 1320px) {
+.cards__list {
+  display: contents;
+}
+
+@media (max-width: 1319px) {
   .cards {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 413px);
   }
 }
 
-@media (max-width: 1319px) and (min-width: 631px) {
+@media (max-width: 900px) {
   .cards {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 413px);
   }
 }
 
 @media (max-width: 630px) {
   .cards {
-    grid-template-columns: 1fr;
-    padding: 0 20px 30px;
+    grid-template-columns: 288px;
+    padding: 20px 0 30px;
   }
 }

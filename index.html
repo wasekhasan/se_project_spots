@@ -7,71 +7,90 @@
   <meta name="author" content="Syed Hasan">
   <meta name="keywords" content="social media, photos, sharing, interactive, web application">
   <title>Spots</title>
-  <link rel="icon" href="./favicon.ico">
-  <link rel="stylesheet" href="./pages/index.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="pages/index.css">
 </head>
 <body>
   <div class="page">
     <header class="header">
-      <p class="header__logo">+ SPOTS</p>
+      <p class="header__logo">
+        <img src="images/logo.svg" alt="Spots logo" class="header__logo"> 
+        
+      </p>
     </header>
     <main class="content">
       <section class="profile">
-        <img src="images/avatar.png" alt="Profile avatar" class="profile__avatar">
+        <img src="images/avatar.png" alt="Syed Hasan profile picture" class="profile__avatar">
         <div class="profile__info">
           <h1 class="profile__name">Syed Hasan</h1>
-          <p class="profile__description">Author Of Black Prescription and aspiring Software engineer </p>
-          <button class="profile__edit-button" type="button">✎ Edit Profile</button>
+          <p class="profile__description">Author Of Black Prescription and aspiring Software engineer, maybe . Lacks any talent though. Stil hasn't published volume 1</p>
+          <button class="profile__edit-button" type="button">
+            <img src="images/editicon.png" alt="edit profile">
+             </button>
         </div>
         <button class="profile__add-button" type="button">+ New Post</button>
       </section>
       <section class="cards">
-        <article class="card">
-          <img src="images/val-thorens.jpg" alt="Gun Park" class="card__image">
-          <div class="card__description">
-            <h2 class="card__title">Val Thorens</h2>
-            <button class="card__like-button" type="button" aria-label="Like"></button>
-          </div>
-        </article>
-        <article class="card">
-          <img src="images/restaurant.jpg" alt="Gun Park" class="card__image">
-          <div class="card__description">
-            <h2 class="card__title">Restaurant terrace</h2>
-            <button class="card__like-button" type="button" aria-label="Like"></button>
-          </div>
-        </article>
-        <article class="card">
-          <img src="images/outdoor-cafe.jpg" alt="Johan Seong Crew head of the Dog God" class="card__image">
-          <div class="card__description">
-            <h2 class="card__title">An outdoor cafe</h2>
-            <button class="card__like-button" type="button" aria-label="Like"></button>
-          </div>
-        </article>
-        <article class="card">
-          <img src="images/bridge.jpg" alt="Vin Djinn the legecy born of strenght" class="card__image">
-          <div class="card__description">
-            <h2 class="card__title">A very long bridge, over the forest...</h2>
-            <button class="card__like-button" type="button" aria-label="Like"></button>
-          </div>
-        </article>
-        <article class="card">
-          <img src="images/tunnel.jpg" alt="Jake Kim. Youngest Leader of the Big Deal" class="card__image">
-          <div class="card__description">
-            <h2 class="card__title">Tunnel with morning light</h2>
-            <button class="card__like-button" type="button" aria-label="Like"></button>
-          </div>
-        </article>
-        <article class="card">
-          <img src="images/mountain-house.jpg" alt="Zack lee Dynamic Daniel Park" class="card__image">
-          <div class="card__description">
-            <h2 class="card__title">Mountain house</h2>
-            <button class="card__like-button" type="button" aria-label="Like"></button>
-          </div>
-        </article>
+        <ul class="cards__list">
+          <li class="card">
+            <img src="images/val-thorens.jpg" alt="pinacle of Kyokoshin Karate. the training Genius " class="card__image">
+            <div class="card__description">
+              <h2 class="card__title">Gun Park Lookism </h2>
+              <button class="card__like-button" type="button" aria-label="Like">
+                <img src="images/Like Icon.png" alt="Spots logo" class="like__logo"> 
+              </button>
+            </div>
+          </li>
+          <li class="card">
+            <img src="images/restaurant.jpg" alt="The only equal ever to exist to Gun park" class="card__image">
+            <div class="card__description">
+              <h2 class="card__title">Goo kim </h2>
+              <button class="card__like-button" type="button" aria-label="Like">
+                <img src="images/Like Icon.png" alt="Spots logo" class="like__logo"> 
+              </button>
+            </div>
+          </li>
+          <li class="card">
+            <img src="images/outdoor-cafe.jpg" alt="The tragedy unfolds for the love of a child for his blind mother" class="card__image">
+            <div class="card__description">
+              <h2 class="card__title">Jeohan Seong. Dog God Crew head </h2>
+              <button class="card__like-button" type="button" aria-label="Like">
+                <img src="images/Like Icon.png" alt="Spots logo" class="like__logo"> 
+              </button>
+            </div>
+          </li>
+          <li class="card">
+            <img src="images/bridge.jpg" alt="Outcasted for his gifted eyes , sealed away his max potential" class="card__image">
+            <div class="card__description">
+              <h2 class="card__title">Vin Jin , chil of legecy </h2>
+              <button class="card__like-button" type="button" aria-label="Like">
+                <img src="images/Like Icon.png" alt="Spots logo" class="like__logo"> 
+              </button>
+            </div>
+          </li>
+          <li class="card">
+            <img src="images/tunnel.jpg" alt="Following in his father's footsteps . Shoes too big" class="card__image">
+            <div class="card__description">
+              <h2 class="card__title">Jake Kim , Big deal Crew head</h2>
+              <button class="card__like-button" type="button" aria-label="Like">
+                <img src="images/Like Icon.png" alt="Spots logo" class="like__logo"> 
+              </button>
+            </div>
+          </li>
+          <li class="card">
+            <img src="images/mountain-house.jpg" alt="Enemies to friends . the journey of a lifetime " class="card__image">
+            <div class="card__description">
+              <h2 class="card__title">Danial & jack Dynamic</h2>
+              <button class="card__like-button" type="button" aria-label="Like">
+                 <img src="images/Like Icon.png" alt="Spots logo" class="like__logo"> 
+              </button>
+            </div>
+          </li>
+        </ul>
       </section>
     </main>
     <footer class="footer">
-      <p class="footer__copyright">© 2024 Spots</p>
+      <p class="footer__copyright">© 2026 Spots</p>
     </footer>
   </div>
 </body>
