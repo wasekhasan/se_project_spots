@@ -1,5 +1,7 @@
 # Spots
 
+
+
 # link to project pitch video
 https://www.loom.com/share/90a387538967467aaec631b213894cb1
 
@@ -48,9 +50,7 @@ se_project_spots/
 ## Setup Instructions
 
 1. Clone the repository:
-   ```bash
-   git clone git@github.com:yourusername/se_project_spots.git
-   ```
+  https://github.com/wasekhasan/se_project_spots.git
 
 2. Open `index.html` in your browser
 
@@ -67,4 +67,3 @@ This project follows the BEM (Block Element Modifier) methodology for CSS organi
 
 - Project design and requirements provided by TripleTen Bootcamp
 - Fonts: Poppins from Google Fonts
-- Normalize.css by Nicolas Gallagher

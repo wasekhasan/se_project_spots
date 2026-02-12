@@ -1,0 +1,11 @@
+.content{
+    padding : 0 20px;
+}
+profile__edit-button{
+    height: 4px;
+    text-align: center;
+}
+.editProfileButton{
+    display: inline-block;
+    margin-right: 5px;
+}
