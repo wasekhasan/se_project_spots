@@ -1,9 +1,10 @@
 # Spots
-
-
+ link to project in github page : https://github.com/wasekhasan/se_project_spots.git
 
 # link to project pitch video
 https://www.loom.com/share/90a387538967467aaec631b213894cb1
+
+# 
 
 ## Project Overview
 
