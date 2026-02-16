@@ -95,5 +95,56 @@
       <p class="footer__copyright">© 2026 Spots</p>
     </footer>
   </div>
+  <div class="modal"  id="editProfileModal">
+    <div class="modal__container">
+      <button class="modal__close-button" type="button" aria-label="Close"></button>
+      <h2 class="modal__title">Edit profile</h2>
+      <form class="modal__form" name="edit-profile-form">
+        <label class="modal__label">
+          <input type="text" name="name" class="modal__input" placeholder="Name"  minlength="2" maxlength="40">
+        </label>
+        <label class="modal__label">
+          <input type="text" name="description" class="modal__input" placeholder="Description"  minlength="2" maxlength="200">
+        </label>
+        <button type="submit" class="modal__submit-button">Save</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- New Post Modal -->
+  <div class="modal" id="newPostModal">
+    <div class="modal__container">
+      <button class="modal__close-button" type="button" aria-label="Close"></button>
+      <h2 class="modal__title">New post</h2>
+      <form class="modal__form" name="new-post-form">
+        <label class="modal__label">
+          <input type="url" name="link" class="modal__input" placeholder="Image link">
+        </label>
+        <label class="modal__label">
+          <input type="text" name="caption" class="modal__input" placeholder="Caption">
+        </label>
+        <button type="submit" class="modal__submit-button"  id="cancelNewPost">Save</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="modal" id="editProfileModal">
+    <div class="modal__container ">
+      <button class="modal__close-button" type="button" aria-label="Close">
+        <img src="images/Property 1=Default.png">
+      </button>
+      <h2 class="modal__title">Edit Profile</h2>
+      <form class="modal__form" name="new-post-form">
+        <label class="modal__label">
+          <input type="text" name="link" class="modal__input" placeholder="Profile Name">
+        </label>
+        <label class="modal__label">
+          <input type="text" name="caption" class="modal__input" placeholder="Profile Description">
+        </label>
+        <button type="submit" class="modal__submit-button"  id="cancelEditProfile">Save</button>
+      </form>
+    </div>
+  </div>
+<script src="script.js"></script>
 </body>
 </html>
