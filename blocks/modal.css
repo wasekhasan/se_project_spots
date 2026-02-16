@@ -7,8 +7,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  /*visibility: hidden;
-  background-color: rgba(0, 0, 0, 0.5);*/
+  visibility: hidden;
+  background-color: rgba(0, 0, 0, 0.5);
   opacity: 0;
   transition: visibility 0.3s, opacity 0.3s;
   z-index: -1;
