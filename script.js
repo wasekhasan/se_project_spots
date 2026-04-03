@@ -1,8 +1,3 @@
-
-document.querySelector(".profile__edit-button").addEventListener('click', (e) => {
-    document.querySelector("#editProfileModal").classList.add('modal_is-opened')
-});
-
 document.querySelector(".profile__add-button").addEventListener('click', (e) => {
     document.querySelector("#newPostModal").classList.add('modal_is-opened');
     //console.log(e)
