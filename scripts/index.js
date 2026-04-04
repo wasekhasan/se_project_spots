@@ -36,7 +36,9 @@ function closeModal(modal) {
 editProfileButton.addEventListener("click", function () {
   editProfileNameInput.value = profileNameElement.textContent;
   editProfileDescriptionInput.value = profileDescriptionElement.textContent;
-  openModal(editProfileModal);
+  //openModal(editProfileModal);
+      document.querySelector("#new-post-modal").classList.add('modal_is-opened');
+
 });
 
 editProfileCloseButton.addEventListener("click", function () {
@@ -71,15 +73,14 @@ newPostForm.addEventListener("submit", handleAddCardSubmit);
 
 document.querySelector(".profile__add-button").addEventListener('click', (e) => {
     document.querySelector("#newPostModal").classList.add('modal_is-opened');
-    //console.log(e)
 
 });
 
-document.querySelector("#cancelNewpost").addEventListener('click', (e) => {
+document.querySelector("#cancelNewPost").addEventListener('click', (e) => {
     document.querySelector("#editProfileModal").classList.remove('modal_is-opened')
 });
 
-document.querySelector("#cancelEditProfile").addEventListener('click', (e) => {
-    document.querySelector("#newPostModal").classList.remove('modal_is-opened')
-});
+//document.querySelector("#cancelEditProfile").addEventListener('click', (e) => {
+  //  document.querySelector("#newPostModal").classList.remove('modal_is-opened')
+//});
 
