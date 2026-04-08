@@ -64,20 +64,20 @@ newPostCloseButton.addEventListener("click", function () {
 
 function handleAddCardSubmit(evt) {
   evt.preventDefault();
-  console.log(newPostLinkInput.value);
-  console.log(newPostCaptionInput.value);
+  //console.log(newPostLinkInput.value);
+  //console.log(newPostCaptionInput.value);
   closeModal(newPostModal);
 }
 
 newPostForm.addEventListener("submit", handleAddCardSubmit);
 
 document.querySelector(".profile__add-button").addEventListener('click', (e) => {
-    document.querySelector("#newPostModal").classList.add('modal_is-opened');
+    document.querySelector("#new-post-modal").classList.add('modal_is-opened');
 
 });
 
 document.querySelector("#cancelNewPost").addEventListener('click', (e) => {
-    document.querySelector("#editProfileModal").classList.remove('modal_is-opened')
+    document.querySelector("#edit-profile-modal").classList.remove('modal_is-opened')
 });
 
 //document.querySelector("#cancelEditProfile").addEventListener('click', (e) => {
