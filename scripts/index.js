@@ -34,8 +34,8 @@ function closeModal(modal) {
 }
 
 editProfileButton.addEventListener("click", function () {
-  editProfileNameInput.value = profileNameElement.textContent;
-  editProfileDescriptionInput.value = profileDescriptionElement.textContent;
+  //editProfileNameInput.value = profileNameElement.textContent;
+  //editProfileDescriptionInput.value = profileDescriptionElement.textContent;
       document.querySelector("#edit-profile-modal").classList.add('modal_is-opened');
 
 });

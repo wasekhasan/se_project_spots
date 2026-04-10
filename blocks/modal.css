@@ -66,6 +66,7 @@
 .modal__label {
   display: block;
   margin-bottom: 32px;
+  color : #212121B2;
 }
 
 .modal__input {
@@ -127,13 +128,11 @@
     font-size: 20px;
     margin-bottom: 32px;
   }
+.modal__submit-button{
+  max-width: 100%;
+}
 
-  .modal__label {
-    margin-bottom: 24px;
-  }
-
-  .modal__input {
+.modal__input {
     font-size: 14px;
-    padding-bottom: 8px;
   }
 }
