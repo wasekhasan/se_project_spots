@@ -14,8 +14,7 @@
   <div class="page">
     <header class="header">
       <p class="header__logo-container">
-        <img src="images/Logo.svg" alt="Spots logo" class="header__logo"> 
-        
+        <img src="images/Logo.svg" alt="Spots logo" class="header__logo">
       </p>
     </header>
     <main class="content">
@@ -25,7 +24,7 @@
           <h1 class="profile__name">Syed Hasan</h1>
           <p class="profile__description">Author Of Black Prescription and aspiring Software engineer, maybe . Lacks any talent though. Stil hasn't published volume 1</p>
           <button class="profile__edit-button" type="button">
-            <img src="images/editicon.svg" alt="edit profile" class="editProfileButton" >
+            <img src="images/editicon.svg" alt="edit profile" class="editProfileButton">
           </button>
         </div>
         <button class="profile__add-button" type="button">
@@ -33,78 +32,35 @@
         </button>
       </section>
       <section class="cards">
-        <ul class="cards__list">
-          <li class="card">
-            <img src="images/val-thorens.jpg" alt="pinacle of Kyokoshin Karate. the training Genius " class="card__image">
-            <div class="card__description">
-              <h2 class="card__title">Gun Park Lookism </h2>
-              <button class="card__like-button" type="button" aria-label="Like">
-                <img src="images/LikeIcon.svg" alt="Spots logo" class="likeLogo"> 
-              </button>
-            </div>
-          </li>
-          <li class="card">
-            <img src="images/restaurant.jpg" alt="The only equal ever to exist to Gun park" class="card__image">
-            <div class="card__description">
-              <h2 class="card__title">Goo kim </h2>
-              <button class="card__like-button" type="button" aria-label="Like">
-                <img src="images/LikeIcon.svg" alt="Spots logo" class="likeLogo"> 
-              </button>
-            </div>
-          </li>
-          <li class="card">
-            <img src="images/outdoor-cafe.jpg" alt="The tragedy unfolds for the love of a child for his blind mother" class="card__image">
-            <div class="card__description">
-              <h2 class="card__title">Jeohan Seong. Dog God Crew head </h2>
-              <button class="card__like-button" type="button" aria-label="Like">
-                <img src="images/LikeIcon.svg" alt="Spots logo" class="likeLogo"> 
-              </button>
-            </div>
-          </li>
-          <li class="card">
-            <img src="images/bridge.jpg" alt="Outcasted for his gifted eyes , sealed away his max potential" class="card__image">
-            <div class="card__description">
-              <h2 class="card__title">Vin Jin , chil of legecy </h2>
-              <button class="card__like-button" type="button" aria-label="Like">
-                <img src="images/LikeIcon.svg" alt="Spots logo" class="likeLogo"> 
-              </button>
-            </div>
-          </li>
-          <li class="card">
-            <img src="images/tunnel.jpg" alt="Following in his father's footsteps . Shoes too big" class="card__image">
-            <div class="card__description">
-              <h2 class="card__title">Jake Kim , Big deal Crew head</h2>
-              <button class="card__like-button" type="button" aria-label="Like">
-                <img src="images/LikeIcon.svg" alt="Spots logo" class="likeLogo"> 
-              </button>
-            </div>
-          </li>
-          <li class="card">
-            <img src="images/mountain-house.jpg" alt="Enemies to friends . the journey of a lifetime " class="card__image">
-            <div class="card__description">
-              <h2 class="card__title">Danial & jack Dynamic</h2>
-              <button class="card__like-button" type="button" aria-label="Like">
-                 <img src="images/LikeIcon.svg" alt="Spots logo" class="likeLogo"> 
-              </button>
-            </div>
-          </li>
-        </ul>
+        <ul class="cards__list"></ul>
       </section>
     </main>
     <footer class="footer">
       <p class="footer__copyright">© 2026 Spots</p>
     </footer>
   </div>
+
+  <template id="card-template">
+    <li class="card">
+      <button class="card__delete-button" type="button" aria-label="Delete"></button>
+      <img class="card__image">
+      <div class="card__description">
+        <h2 class="card__title"></h2>
+        <button class="card__like-button" type="button" aria-label="Like"></button>
+      </div>
+    </li>
+  </template>
+
   <div class="modal" id="edit-profile-modal">
     <div class="modal__container">
       <button class="modal__close-button" type="button" aria-label="Close"></button>
       <h2 class="modal__title">Edit profile</h2>
       <form class="modal__form" name="edit-profile-form">
         <label class="modal__label">Name
-          <input type="text" name="name" class="modal__input" placeholder="Type your name "  minlength="2" maxlength="40">
+          <input type="text" name="name" class="modal__input" placeholder="Type your name" minlength="2" maxlength="40">
         </label>
         <label class="modal__label">description
-          <input type="text" name="description" class="modal__input" placeholder="Description"  minlength="2" maxlength="200">
+          <input type="text" name="description" class="modal__input" placeholder="Description" minlength="2" maxlength="200">
         </label>
         <button type="submit" class="modal__submit-button">Save</button>
       </form>
@@ -122,10 +78,19 @@
         <label class="modal__label">caption
           <input type="text" name="caption" class="modal__input" placeholder="Type a Caption for the picture">
         </label>
-        <button type="submit" class="modal__submit-button"  id="cancelNewPost">Save</button>
+        <button type="submit" class="modal__submit-button">Save</button>
       </form>
     </div>
   </div>
-<script src="scripts/index.js"></script>
+
+  <div class="modal" id="preview-modal">
+    <div class="modal__container modal__container_type_image">
+      <button class="modal__close-button" type="button" aria-label="Close"></button>
+      <img class="modal__image" src="" alt="">
+      <p class="modal__caption"></p>
+    </div>
+  </div>
+
+  <script src="scripts/index.js"></script>
 </body>
 </html>
