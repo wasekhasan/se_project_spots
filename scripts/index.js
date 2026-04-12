@@ -34,10 +34,9 @@ function closeModal(modal) {
 }
 
 editProfileButton.addEventListener("click", function () {
-  //editProfileNameInput.value = profileNameElement.textContent;
-  //editProfileDescriptionInput.value = profileDescriptionElement.textContent;
-      document.querySelector("#edit-profile-modal").classList.add('modal_is-opened');
-
+  editProfileNameInput.value = profileNameElement.textContent;
+  editProfileDescriptionInput.value = profileDescriptionElement.textContent;
+  openModal(editProfileModal);
 });
 
 editProfileCloseButton.addEventListener("click", function () {
@@ -66,15 +65,5 @@ function handleAddCardSubmit(evt) {
   console.log(newPostLinkInput.value);
   console.log(newPostCaptionInput.value);
   closeModal(newPostModal);
+  newPostForm.reset();
 }
-
-newPostForm.addEventListener("submit", handleAddCardSubmit);
-
-document.querySelector(".profile__add-button").addEventListener('click', (e) => {
-    document.querySelector("#new-post-modal").classList.add('modal_is-opened');
-
-});
-
-document.querySelector("#cancelNewPost").addEventListener('click', (e) => {
-    document.querySelector("#edit-profile-modal").classList.remove('modal_is-opened')
-});
