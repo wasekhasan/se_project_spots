@@ -46,7 +46,7 @@
 .modal__close-button {
   position: absolute;
   top: 36px;
-  right: 0;
+  right: 50px;
   width: 24px;
   height: 24px;
   background: transparent url("../images/Property\ 1=Default.png") center /
@@ -57,6 +57,14 @@
   opacity: 0.6;
   transition: opacity 0.3s ease;
   background-size: 35px 35px;
+}
+
+.modal__close-button_type_image {
+  top: 0;
+  right: -36px;
+  background-image: url("../images/close-light.svg");
+  background-size: contain;
+  opacity: 1;
 }
 
 .modal__close-button:hover {
@@ -140,6 +148,9 @@
   line-height: 1.2;
   color: #ffffff;
   margin: 16px 0 0;
+  background-color: #212121;
+  padding: 8px 16px;
+  border-radius: 4px;
 }
 
 @media (max-width: 630px) {
@@ -149,7 +160,7 @@
 
   .modal__close-button {
     top: 22px;
-    right: 0;
+    right: 12px;
   }
 
   .modal__title {
@@ -165,8 +176,19 @@
     font-size: 14px;
   }
 
+  .modal__container_type_image {
+    max-width: 100%;
+    width: 100%;
+    padding: 36px 0 24px;
+  }
+
+  .modal__close-button_type_image {
+    right: 0;
+  }
+
   .modal__image {
-    max-width: 90vw;
+    max-width: 100%;
+    width: 100%;
   }
 
   .modal__caption {

@@ -75,7 +75,7 @@
 }
 
 .card__like-button_is-liked {
-  background-image: url("../images/State=Hover.png");
+  background-image: url("../images/like-icon-active.svg");
 }
 
 @media (max-width: 630px) {
