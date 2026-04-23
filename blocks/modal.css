@@ -176,19 +176,15 @@
     font-size: 14px;
   }
 
-  .modal {
-    padding: 0 20px;
-  }
-
   .modal__container_type_image {
-    max-width: 100%;
-    width: 100%;
-    padding: 0 0 16px;
+    width: 288px;
+    max-width: 288px;
+    padding: 40px 0 16px;
   }
 
   .modal__close-button_type_image {
-    top: 8px;
-    right: 8px;
+    top: 0;
+    right: 0;
   }
 
   .modal__image {
