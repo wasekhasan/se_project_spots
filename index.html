@@ -57,10 +57,12 @@
       <h2 class="modal__title">Edit profile</h2>
       <form class="modal__form" name="edit-profile-form">
         <label class="modal__label">Name
-          <input type="text" name="name" class="modal__input" placeholder="Type your name" minlength="2" maxlength="40" required>
+          <input type="text" id="profile-name-input" name="name" class="modal__input" placeholder="Type your name" minlength="2" maxlength="40" required>
+          <span class="modal__error" id="profile-name-input-error"></span>
         </label>
         <label class="modal__label">description
-          <input type="text" name="description" class="modal__input" placeholder="Description" minlength="2" maxlength="200" required>
+          <input type="text" id="profile-description-input" name="description" class="modal__input" placeholder="Description" minlength="2" maxlength="200" required>
+          <span class="modal__error" id="profile-description-input-error"></span>
         </label>
         <button type="submit" class="modal__submit-button">Save</button>
       </form>
@@ -73,10 +75,12 @@
       <h2 class="modal__title">New post</h2>
       <form class="modal__form" name="new-post-form">
         <label class="modal__label">Image link
-          <input type="url" name="link" class="modal__input" placeholder="Paste an Image link" required>
+          <input type="url" id="post-link-input" name="link" class="modal__input" placeholder="Paste an Image link" required>
+          <span class="modal__error" id="post-link-input-error"></span>
         </label>
         <label class="modal__label">caption
-          <input type="text" name="caption" class="modal__input" placeholder="Type a Caption for the picture">
+          <input type="text" id="post-caption-input" name="caption" class="modal__input" placeholder="Type a Caption for the picture" minlength="2" maxlength="30" required>
+          <span class="modal__error" id="post-caption-input-error"></span>
         </label>
         <button type="submit" class="modal__submit-button">Save</button>
       </form>
@@ -91,6 +95,7 @@
     </div>
   </div>
 
+  <script src="scripts/validation.js"></script>
   <script src="scripts/index.js"></script>
 </body>
 </html>

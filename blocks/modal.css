@@ -153,6 +153,27 @@
   border-radius: 4px;
 }
 
+.modal__input_type_error {
+  border-color: #ff0000;
+}
+
+.modal__error {
+  color: #ff0000;
+  font-size: 12px;
+  line-height: 1.2;
+  margin-top: 4px;
+  display: none;
+}
+
+.modal__error_visible {
+  display: block;
+}
+
+.modal__button_disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
 @media (max-width: 630px) {
   .modal__container {
     padding: 22px 12px 12px;
